@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--while__gray);
+    color: var(--gray);
+}
+nav{
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: 50px;
+
+    background: var(--while);
+}
+nav .logo{
+    color: var(--green);
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+nav .links{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+nav .links li{
+    list-style: none;
+}
+nav .links a{
+    display: block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    transition: .2s;
+}
+nav .links a:hover i{
+    transition: 1s;
+    color: var(--green);
+    transform: translateY(0px) rotate(360deg);
+}
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+
+}
+nav .icon-burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background: var(--green);
+    margin: 5px;
+    border-radius: 3px;
+}
+/*==========STYLE BUTONS==================================================================================*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--while);
+}
+.box_buton{
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+
+    border: 3px solid var(--while__gray);
+}
+.box_buton a{
+    text-decoration: none;
+}
+
+.box_buton img{
+    width: 60px;
+    margin-bottom: 10px;
+
+    transition: .2s;
+}
+.box_buton:hover img{
+    margin-left: 10px;
+}
+.box_buton h2{
+    margin-bottom: 5px;
+}
+.box_buton h2,
+.box_buton p{
+    color: var(--gray);
+}
+.box_buton span{
+    font-size: 30px;
+    color: var(--green);
+
+    transition: .2s;
+}
+.box_buton:hover span{
+    font-size: 40px;
+    color: var(--green);
+}
+.container_buton{
+    display: flex;
+    justify-content: space-between;
+}
+/*==========/STYLE_ABA_DISPONIVEL===========*/
+.container_disp h1{
+    margin-bottom: 20px;
+}
+.container_disp{
+    width: 100%;  
+    padding: 50px 50px 20px 50px; 
+}
+.box_disp{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/*titulo Tabela=================================================*/
+.cont_titulo{
+    display: flex;
+}
+.cont_titulo .gif_titulo img{
+    width: 80px;
+    margin-left: 10px;
+}
+.box_disp span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--while);
+}
+
+.container_disp .box_status{
+    background: var(--green); 
+    height: 40px;
+}
+.icon_status__titu,
+.tempo_status__titu{
+    width: 200px;
+    padding: 5px;
+}
+.local_status__titu{
+    width: 100%;
+    margin-top: 5px;
+}
+/*icon N carro=================================================*/
+.icon_status{
+    width: 200px;
+    height: 100px;
+
+    background: var(--while__gray);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+}
+.icon_status p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: var(--green);
+}
+
+/*local=================================================*/
+.local_status{
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--while__gray);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+
+    transition: .5s;
+}
+.localizacoes_status{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.localizacoes_status .localizacao_status i{
+    font-size: 30px;
+    margin-top: 60px;
+    transition: .2s;
+}
+.local_status:hover i{
+    color: var(--green);
+}
+.localizacoes_status .localizacao_status p{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*tabela de clientes DISPONIVEL=================================================*/
+.local_status .mapa_local{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: var(--while);
+    margin: 0 auto;
+}
+.container__cliente{
+    display: flex;
+    border: 2px solid var(--while__gray);
+}
+.quant__cliente{
+    width: 60px;
+    margin-right: 20px;
+    border: 2px solid var(--green);
+}
+.quant__cliente p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 20%;
+    color: var(--green);
+}
+.nome__cliente{
+    width: 80%;
+}
+.img_cliente{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.img_cliente img{
+    width: 80px;
+    margin-top: 15px;
+}
+.nome__cliente{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+/*Tempo=================================================*/
+.tempo_status{
+    width: 200px;
+    height: 100px;
+
+    background: var(--while__gray);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+}
+
+.tempo_status p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: var(--green);
+}
+/*==================================================CARRINHO OCUPADOS=============================================*/
+.container__ocup h3{
+    font-weight: lighter;
+} 
+.container__estoque{
+    display: flex;
+}
+.estoque{
+    margin: 0 20px 0 0;
+    border:2px solid var(--gray);
+    padding: 5px;
+    width: 100px;
+}
+
+/*==================================================FORMULARIO-CARRINHHO=============================================*/
+.container_form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    padding: 50px;
+    width: 60%;
+}
+.formulario h1{
+    margin:20px 0 20px 0;
+}
+.formulario h1 i{
+    margin-right: 10px;
+    color: var(--green);
+}
+.formulario p, 
+.formulario select,
+.formulario input
+{
+    margin-left: 45px;
+}
+.formulario p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.formulario select{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 2px solid var(--green);
+
+
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.formulario input{
+    font-size: 16px;
+    padding-left: 10px;
+    width: 70%;
+    height: 30px;
+    border: none;
+
+    background-color: var(--while);
+    border-bottom: 2px solid var(--green);
+}
+
+/*Ilustracao Form=================================================*/
+.capa__form{
+    width: 40%;
+    height: 80vh;
+    margin-right: 10%;
+    overflow: hidden;
+
+    background-color: var(--green);
+}
+.capa__form img{
+    width: 100%;
+    opacity: .5;
+}

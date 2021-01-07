@@ -1,0 +1,128 @@
+:root{
+    --while: #ffffff;
+    --while__gray: #f9f9f9;
+    --green: #2DCC70;
+    --gray: rgb(114, 114, 114) ;
+   
+}
+/*=======MEDIA========*/
+
+@media only screen and (max-width: 900px){
+     /*=====NAVBAR BURGER=========================*/
+     nav .links{
+         float: none;
+         position: fixed;
+         z-index: 9;
+         left: 0;
+         right: 0;
+         top: 50px;
+         bottom: 100%;
+         width: auto;
+         height: auto;
+         justify-content: end;
+         flex-direction: column;
+         overflow: hidden;
+         background-color: rgba(0, 0, 0, 0.787);
+
+         transition: all .5s ease-in-out;
+     }
+     nav .links a{
+        color: var(--while);
+        font-size: 30px;
+
+        padding: 1rem;
+        border-radius: 0px;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+     }
+     nav .icon-burger{
+        display: block;
+    }
+    nav .logo{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    nav :checked ~ .links {
+		bottom: 0;
+    }
+    nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+    /*=====HOME BUTONS=========================*/
+    .box_buton{
+        border: 1px solid var(--while__gray);
+    }
+    .box_buton img{
+        width: 40px;
+    }
+    .box_buton:hover img{
+        margin-left: 5px;
+    }
+    .box_buton h2{
+        font-size: 0.6rem;
+    }
+    .box_buton span{
+        font-size: 0.8rem;
+    }
+    .box_buton:hover span{
+        font-size: 0.9rem;
+    }
+    .infor_buton{
+        display: none;
+    }
+    
+   /*====STYLE_ABA_DISPONIVEL===========*/
+    .container_disp{
+        padding: 50px 5px 5px  5px ; 
+    }
+    .box_status span{
+        font-size: 16px;
+    }
+    .box_status{
+        height: 15px;
+    }
+    .local_status{
+        height: 50px;
+    }
+    .localizacoes_status{
+        height: 50px;
+        padding: 0;
+    }
+    .localizacoes_status .localizacao_status p{
+        margin-top: 0;
+        padding: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .localizacoes_status .localizacao_status i{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .tempo_status p,
+    .icon_status p  {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .tempo_status,
+    .icon_status  {
+        width: 100px;
+        height: 50px;
+    }
+
+/*==================================================SCANNER=====================================================*/
+
+}
